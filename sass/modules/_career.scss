@@ -1,0 +1,24 @@
+.career{
+  background-color: $secondary-color;
+  @extend %sectionpadding;
+  @include e(button){
+    margin-top: 35px;
+    text-align: center;
+  }
+  @include e(get-in-touch){
+    border: none;
+    outline: none;
+    background: $accent-color;
+    padding: 14px 28px;
+    border-radius: 3px;
+    color: $secondary-color;
+    font-weight: 700;
+    font-family: $font-family--primary;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+}

@@ -6,7 +6,7 @@
 // will have an !important property attached to it, so that a helper class cannot be overwritten.
 // Placeholders can also be included in the helper partial for these purposes.
 // ==========================================================================
-
+@import 'utilities';
 //Screen reader text:
 .srt{
   border: 0;
@@ -36,4 +36,22 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+%clearfix{
+  content: "";
+  clear: both;
+  display: table;
+}
 
+//provide top bottom padding for a section
+%sectionpadding{
+  padding: 45px 0;
+  @include mq(md){
+    padding: 70px 0;
+  }
+}
+//set maximum width of page to 1200
+%maxwidth{
+  @include mq(xl){
+    max-width: 1200px;
+  }
+}

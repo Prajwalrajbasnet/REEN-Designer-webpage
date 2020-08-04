@@ -1,0 +1,45 @@
+.work-card{
+  margin-bottom: 35px;
+  @include mq(sm){
+    float: left;
+    width: calc(50% - 5px);
+    margin: auto;
+    &:not(:last-child){
+      margin-right: 10px;
+    }
+  }
+  @include mq(md){
+    width: calc(50% - 10px);
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+  @include e(image){
+    width: 100%;
+    img{
+      width: 100%;
+    }
+  }
+  @include e(caption){
+    background-color: $secondary-color;
+    padding: 18px;
+    text-align: center;
+  }
+  @include e(name){
+    font-family: $font-family--secondary;
+    font-size: 14px;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 30px;
+    @include mq(sm){
+      font-size: 12px;
+    }
+    @include mq(md){
+      font-size: 18px;
+    }
+  }
+  @include e(type){
+    font-family: $font-family--primary;
+    font-size: 13px;
+  }
+}

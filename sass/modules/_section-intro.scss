@@ -1,0 +1,34 @@
+.section-intro{
+  margin-bottom: em(35px);
+  text-align: center;
+  @include mq(lg){
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include e(title){
+    font-family: $font-family--secondary;
+    font-size: 25px;
+    font-weight: 700;
+    color: $primary-color;
+    line-height: 55px;
+    @include mq(md){
+      font-size: 35px;
+      line-height: 65px;
+    }
+    @include mq(lg){
+      font-size: 40px;
+      line-height: 80px;
+    }
+  }
+  @include e(text){
+    font-family: $font-family--primary;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $color-text;
+    font-weight: 500;
+    @include mq(lg){
+      font-size: 20px;
+    }
+  }
+}

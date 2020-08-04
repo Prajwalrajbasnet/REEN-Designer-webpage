@@ -1,0 +1,45 @@
+.header-container{
+  width: 100%;
+  background-color: $ternary-color;
+}
+.header{
+  max-width: 90%;
+  margin: auto;
+  padding: 12px 0;
+  text-align: center;
+  @include mq(xl){
+    max-width: 1200px;
+  }
+  &::after{
+    @extend %clearfix;
+  }
+  @include e(contact){
+    color: $primary-color;
+    // float: left;
+    &::after{
+      @extend %clearfix;
+    }
+    @include mq(sm){
+      &{
+        float: left;
+      }
+     }
+  }
+  @include e(social-bar){
+    margin-top: 7px;
+  }
+  @include mq(sm){
+    @include e(phone){
+      float: left;
+      margin-left: 10px;
+    }
+    @include e(email){
+      float: left;
+    }
+    @include e(social-bar){
+      float: right;
+      margin-top: 0;
+    }
+    
+  }
+}

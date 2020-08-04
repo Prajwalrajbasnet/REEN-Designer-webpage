@@ -4,9 +4,17 @@
 // the folder to its respective manifest partial. Then all manifest partial will be imported to the
 // style.scss file.
 // ==========================================================================
-
-@import 'extends';
-@import 'module';
-@import 'buttons';
-// @import 'theme';
-@import 'example';
+@import 'header';
+@import 'navbar';
+@import 'hero';
+@import 'speciality';
+@import 'contact';
+@import 'social-bar';
+@import 'section-intro';
+@import 'ourworks';
+@import 'work-card';
+@import 'section-wrapper';
+@import 'carousel';
+@import 'career';
+@import 'footer';
+@import 'email-subscription';

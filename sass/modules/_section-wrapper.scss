@@ -1,0 +1,7 @@
+.section-wrapper{
+  max-width: 90%;
+  margin: auto;
+  @include mq(xl){
+    max-width: 1200px;
+  }
+}

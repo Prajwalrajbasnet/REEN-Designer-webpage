@@ -1,0 +1,59 @@
+.speciality{
+  background-color: $secondary-color;
+  @extend %sectionpadding;
+  @include e(features){
+    &::after{
+      @extend %clearfix;
+    }
+  }
+  @include e(feature){
+    &::after{
+      @extend %clearfix;
+    }
+    @include mq(lg){
+      float: left;
+      width: 31%;
+      margin-left: 1%;
+    }
+  }
+  @include e(feature-icon){
+    text-align: center;
+    margin-bottom: 10px;
+    @include mq(lg){
+      float: left;
+      margin-bottom: 0;
+      margin-right: 20px;
+      text-align: left;
+      padding-top: 14px;
+    }
+  }
+  @include e(feature-details){
+    @include mq(lg){
+      float: left;
+      width: pntg(274, 368);
+    }
+  }
+  @include e(feature-title){
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: $font-family--secondary;
+    color: $primary-color;
+    font-weight: 700;
+    @include mq(lg){
+      text-align: left;
+    }
+  }
+
+  @include e(feature-desc){
+    font-family: $font-family--primary;
+    font-size: 16px;
+    color: $color-text;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    @include mq(lg){
+      text-align: left;
+    }
+  }
+}

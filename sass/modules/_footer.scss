@@ -1,0 +1,180 @@
+.footer{
+  // padding: 25px 0;
+  color: $secondary-color;
+  @include e(content){
+    background-color: $pickled-bluewood-lighter;
+    width: 100%;
+    padding: 30px 0;
+
+  }
+  @include e(content-wrapper){
+    max-width: 90%;
+    margin: auto;
+    &::after{
+      @extend %clearfix;
+    }
+    @include mq(xl){
+      max-width: 1200px;
+    }
+  }
+  @include e(heading){
+    font-family: $font-family--secondary;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 3;
+  }
+  @include e(logo){
+    width: 40%;
+    margin-bottom: 15px;
+  }
+  @include e(text){
+    font-family: $font-family--primary;
+    color: $cadet-blue;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  @include e(about){
+    margin-bottom: 25px;
+    @include mq(sm){
+      float: left;
+      margin-right: 18px;
+      width: calc(50% - 9px);
+    }
+    @include mq(md){
+      margin-right: 15px;
+      width: calc(33.33% - 15px);
+    }
+    @include mq(xl){
+      float: left;
+      width: calc(25% - 15px);
+      margin-right: 20px;
+    }
+  }
+  @include e(about-link){
+    font-weight: 700;
+    margin-top: 15px;
+    & a{
+      color: $cadet-blue;
+    }
+  }
+  @include e(works){
+    display: none;
+    @include mq(xl){
+      display: block;
+      float: left;
+      width: calc(25% - 15px);
+      margin-right: 20px;
+    }
+  }
+  @include e(work-item){
+    margin-top: 4px;
+    width: calc(50% - 2px);
+  }
+  @include e(contact-us){
+    margin-bottom: 25px;
+    @include mq(sm){
+      float: left;
+      width: calc(50% - 9px);
+    }
+    @include mq(md){
+      margin-right: 15px;
+      width: calc(33.33% - 15px);
+    }
+    @include mq(xl){
+      float: left;
+      width: calc(25% - 15px);
+      margin-right: 20px;
+    }
+  }
+  @include e(contact){
+    font-family: $font-family--primary;
+    color: $cadet-blue;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  @include e(newsletter){
+    float: left;
+    width: 100%;
+    @include mq(md){
+      width: calc(33.33% - 15px);
+    }
+    @include mq(xl){
+      float: left;
+      width: calc(25% - 15px);
+    }
+  }
+  @include e(signup){
+    margin-top: 15px;
+  }
+
+  @include e(major){
+    background-color: $pickled-bluewood;
+    padding: 20px 0;
+  }
+  @include e(major-wrapper){
+    max-width: 90%;
+    margin: auto;
+    @include mq(xl){
+      max-width: 1200px;
+    }
+    &::after{
+      @extend %clearfix;
+    }
+  }
+  @include e(copyright-content){
+    color: $slate-gray;
+    font-size: 15px;
+    @include mq(lg){
+      float: left;
+      padding-top: 8px;
+    }
+  }
+  @include e(navigation){
+    display: none;
+    text-align: center;
+    margin-left: 45%;
+    @include mq(lg){
+      display: block;
+      float: left;
+    }
+  }
+  @include e(nav-link){
+    & a{
+      color: $slate-gray;
+      font-size: 15px;
+    }
+    padding: 5px;
+    display: inline-block;
+    &:hover{
+      text-decoration: underline;
+      color: $slate-gray;
+    }
+  }
+  @include e(back-to-top){
+    position: fixed;
+    right: 8px;
+    bottom: 8px;
+    padding: 9px 15px;
+    background: $fiord;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 0.3;
+    color: $secondary-color;
+    transition: 0.4s ease-in-out;
+    &:hover{
+      opacity: 1;
+    }
+    @include mq(md){
+      right: 15px;
+      bottom: 15px;
+    }
+    @include mq(lg){
+      right: 25px;
+      bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.email-subscription{
+  width: 100%;
+  padding: 8px;
+  border-radius: 2px;
+  &::after{
+    @extend %clearfix;
+  }
+  background-color: $river-bed;
+  @include e(input){
+    padding: 8px 15px 8px 5px;
+    float: left;
+    width: calc(100% - 108px);
+    font-size: 11px;
+    color: $cadet-blue;
+    background: none;
+    border: none;
+    outline: none;
+  }
+  @include e(submit){
+    float: right;
+    font-size: 11px;
+    padding: 10px 15px;
+    font-weight: 700;
+    color: $secondary-color;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    background-color: $accent-color;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    &:hover{
+      opacity: 0.75;
+    }
+  }
+}

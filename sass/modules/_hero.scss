@@ -1,0 +1,80 @@
+.hero{
+  text-align: center;
+  background: url('../images/hero.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  @include e(banner){
+    padding-top: 38%;
+    @include mq(lg){
+      padding-top:15%;
+    }
+  }
+  @include e(banner-text){
+    max-width: 90%;
+    margin: auto;
+    @include mq(lg){
+      max-width: 980px;
+    }
+
+  }
+  @include e(banner-heading){
+    font-family: $font-family--secondary;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: $secondary-color;
+    font-size: 40px;
+    text-transform: uppercase;
+    @include mq(md){
+      font-size: 55px;
+    }
+    @include mq(lg){
+      font-size: 78px;
+      line-height: 88px;
+      letter-spacing: 5px;
+      
+    }
+  }
+  @include e(banner-paragraph){
+    font-family: $font-family--primary;
+    color: $cadet-blue;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin: 20px 0 55px;
+
+    @include mq(md){
+      font-size: 20px;
+    }
+    @include mq(lg){
+      font-size: 22px;
+    }
+  }
+  @include e(get-started-btn){
+    border: none;
+    outline: none;
+    background: $accent-color;
+    padding: 14px 28px;
+    color: $secondary-color;
+    cursor: pointer;
+    font-family: $font-family--primary;
+    font-weight: 700;
+    transition: 0.4s ease-in-out;
+    border-radius: 3px;
+    
+    &:hover{
+      background: linear-gradient(rgba(255, 255, 255, 0.6), $accent-color);
+    }
+
+    @include mq(sm){
+      padding: 16px 40px;
+    }
+    @include mq(md){
+      padding: 18px 50px;
+    }
+    @include mq(lg){
+      padding: 20px 63px;
+    }
+  }
+}

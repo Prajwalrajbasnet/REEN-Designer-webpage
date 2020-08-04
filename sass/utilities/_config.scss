@@ -31,20 +31,32 @@ $base__line: 24px;
 
 $font-family-sans-fallback: 'Arial', sans-serif;
 $font-family-sans: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
-$font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
-$font-family-monospace: 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier', monospace;
+$font-family-sans2: 'Lato', sans-serif;
+// $font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
+// $font-family-monospace: 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier', monospace;
 $font-family--primary : $font-family-sans;
-$font-family--secondary : $font-family-sans;
+$font-family--secondary : $font-family-sans2;
 
 //Colors
 $white: #fff;
 $black: #000;
 $gray: #c7c7c7;
-$red: #D24D57;
 $blue: #3A539B;
 $light-blue: #009BDE;
 $yellow: #F7CA18;
+$red: #D24D57;
 $green: #36D7B7;
+$blue-buyox: #506a85;
+$caribbean-green: #00bb9b;
+$lynch: #73879c;
+$cadet-blue: #a3b1bf;
+$pickled-bluewood-lighter: #2F3F51;
+$pickled-bluewood: #273545;
+$athens-gray: #f5f7f9;
+$regent-gray: #828E99;
+$river-bed: #4e5c6b;
+$slate-gray: #707E8C;
+$fiord: #3c5065;
 
 //Message Colors
 $error: lighten($red,5%) !default;
@@ -92,12 +104,13 @@ $head2-font-size: $head1-font-size - 4px !default;
 $head3-font-size: $head1-font-size - 8px !default;
 
 //Color Usage
-$primary-color: $white;
-$secondary-color: $black;
-$accent-color: $gray;
+$primary-color: $blue-buyox;
+$secondary-color: $white;
+$ternary-color: $athens-gray;
+$accent-color: $caribbean-green;
 $shadow-color: rgba($black, .2);
 $border-color: $gray;
-$color-text: $black;
+$color-text: $lynch;
 $color-link: $blue;
 
 //Path to Assets

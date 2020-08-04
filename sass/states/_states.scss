@@ -20,16 +20,16 @@
 }
 
 // Hidden for desktops
-.is-displayed-mobile {
-	@include mq(sm){
-		display: block;
-		@at-root (with:media){
-			.is-hidden-mobile{
-				display: none;
-			}
-		}
-	}
-	@include mq(md){
-		display: none;
-	}
-}
+// .is-displayed-mobile {
+// 	@include mq(sm){
+// 		display: block;
+// 		@at-root (with:media){
+// 			.is-hidden-mobile{
+// 				display: none;
+// 			}
+// 		}
+// 	}
+// 	@include mq(md){
+// 		display: none;
+// 	}
+// }

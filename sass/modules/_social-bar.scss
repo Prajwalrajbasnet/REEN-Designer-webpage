@@ -1,0 +1,10 @@
+.social-bar{
+  font-size: 11px;
+  color: $primary-color;
+  .social-bar__button:not(:first-child){
+    margin-left: 15px;
+  }
+  @include e(button){
+    cursor: pointer;
+  }
+}

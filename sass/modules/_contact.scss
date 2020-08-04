@@ -1,0 +1,10 @@
+.contact{
+  font-size: 12px;
+  font-family: $font-family--primary;
+  @include e(data){
+    margin-left: 4px;
+  }
+  @include e(email){
+    cursor: pointer;
+  }
+}
